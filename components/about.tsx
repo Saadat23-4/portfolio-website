@@ -25,8 +25,8 @@ export default function About() {
         and currently work as a{" "}
         <span className="font-medium">Frontend Developer</span>.{" "}
         <span className="italic"> My core stack includes</span>{" "}
-        <span className="underline">React, JavaScript, and Next.JS,</span> and
-        I'm well-versed in{" "}
+        <span className="underline">React, JavaScript, and Next.JS,</span> and{" "}
+        {"I'm well-versed in"}{" "}
         <span className="font-medium">TypeScript and Redux.</span> Always eager
         to explore new technologies, I am actively seeking a full-time position
         as a frontend developer.
@@ -37,7 +37,7 @@ export default function About() {
         <span className="font-medium">
           My curiosity extends beyond coding -{" "}
         </span>
-        I'm currently delving into the world of{" "}
+        {"I'm currently delving into the world of"}{" "}
         <span className="font-medium">dessert cooking.</span>
       </p>
     </motion.section>
