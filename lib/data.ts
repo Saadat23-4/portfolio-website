@@ -2,9 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+
+import amazon from "@/public/Amazon.png";
+import tesla from "@/public/tesla.png";
+import faceYoga from "@/public/faceYoga.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -35,52 +37,51 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated SEYTECH bootcamp",
+    location: "Chicago, IL",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "After completing six months of study, I graduated and subsequently began my role as a Frontend Developer at Cargo Fleet Company in March 2022.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2020-2021",
   },
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "Chicago, IL",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I possess two years of hands-on expertise working as a Front End Developer at Cargo Fleet company.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022 - Present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "UI-UX Design",
+    location: "Bishkek, KG",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I have accrued three months of practical experience in UI-UX design based in Bishkek, Kyrgyzstan. Proficient in utilizing Figma and Adobe Illustrator for design tasks.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2020",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Amazon website clone",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Developed an Amazon clone using React, Redux Toolkit, Tailwind CSS, Framer Motion, and Firebase.",
+    tags: ["React", "Redux", "Framer Motion", "Tailwind", "Firebase"],
+    imageUrl: amazon,
   },
   {
-    title: "rmtDev",
+    title: "TESLA",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Built Tesla clone with ReactJS, Redux, Styled Components, Framer Motion",
+    tags: ["React", "JavaScript", "Redux", "Styled Components"],
+    imageUrl: tesla,
   },
   {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    title: "UI-UX design, Face Yoga app",
+    description: "Designed Face Yoga App using Figma",
+    tags: ["Figma"],
+    imageUrl: faceYoga,
   },
 ] as const;
 
