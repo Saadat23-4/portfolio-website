@@ -3,10 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
-import amazon from "@/public/Amazon.png";
+import amazon from "@/public/amazon.png";
 import tesla from "@/public/tesla.png";
 import faceYoga from "@/public/faceYoga.png";
-import rmtdevImg from "@/public/rmtdev.png";
 
 export const links = [
   {
