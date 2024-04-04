@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-
 import amazon from "@/public/amazon.png";
 import tesla from "@/public/tesla.png";
+import Iframe from "react-iframe";
 import faceYoga from "@/public/faceYoga.png";
 
 export const links = [
@@ -68,6 +68,7 @@ export const projectsData = [
       "Developed an Amazon clone using React, Redux Toolkit, Tailwind CSS, Framer Motion, and Firebase.",
     tags: ["React", "Redux", "Framer Motion", "Tailwind", "Firebase"],
     imageUrl: amazon,
+    externalUrl: "https://amazon-website-clone-ten.vercel.app/",
   },
   {
     title: "TESLA",
@@ -75,12 +76,14 @@ export const projectsData = [
       "Built Tesla clone with ReactJS, Redux, Styled Components, Framer Motion",
     tags: ["React", "JavaScript", "Redux", "Styled Components"],
     imageUrl: tesla,
+    externalUrl: "_blank",
   },
   {
     title: "UI-UX design, Face Yoga app",
     description: "Designed Face Yoga App using Figma",
     tags: ["Figma"],
     imageUrl: faceYoga,
+    externalUrl: "https://www.behance.net/gallery/158151979/Case-Face-yoga",
   },
 ] as const;
 

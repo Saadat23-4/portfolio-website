@@ -3,15 +3,26 @@
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
+import { StaticImageData } from "next/image";
+import Iframe from "react-iframe";
 import { useScroll, motion, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
+//type ProjectProps = (typeof projectsData)[number];
+
+type ProjectProps = {
+  title: string;
+  description: string;
+  tags: readonly string[];
+  imageUrl: StaticImageData;
+  externalUrl: string;
+};
 
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
+  externalUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -22,6 +33,19 @@ export default function Project({
 
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  const handleClick = () => {
+    window.open(externalUrl, "_blank");
+  };
+
+  const handleClickIframe = (
+    event: React.MouseEvent<HTMLIFrameElement, MouseEvent>
+  ) => {
+    event.preventDefault(); // Prevent default behavior
+    if (externalUrl) {
+      window.open(externalUrl, "_blank");
+    }
+  };
 
   return (
     <motion.div
@@ -49,10 +73,12 @@ export default function Project({
             ))}
           </ul>
         </div>
-
+        imageUrl && (
         <Image
           src={imageUrl}
           alt="Project I worked on"
+          width={500}
+          height={300}
           quality={95}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition
@@ -66,7 +92,9 @@ export default function Project({
         group-even:group-hover:rotate-2
 
         group-even:right-[initial] group-even:-left-40"
+          onClick={handleClick}
         />
+        )
       </section>
     </motion.div>
   );
