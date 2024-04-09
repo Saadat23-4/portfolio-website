@@ -76,7 +76,7 @@ export const projectsData = [
       "Built Tesla clone with ReactJS, Redux, Styled Components, Framer Motion",
     tags: ["React", "JavaScript", "Redux", "Styled Components"],
     imageUrl: tesla,
-    externalUrl: "_blank",
+    externalUrl: "https://tesla-clone-mu-one.vercel.app/",
   },
   {
     title: "UI-UX design, Face Yoga app",
